@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SGlow Shop</title>
+    <style>
+        html{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ffc20d' fill-opacity='0.1'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+        .judul {
+            font-size: 40px;
+        } 
+        .bg-kuning {
+            background: #FFC20D;
+            height: 30px;
+            margin:0px;
+        }
+        ul.produk {
+            display: grid;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+        }
+        ul.produk li  {
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+        .container {
+            width: 800px;
+            margin: 0 auto;
+        }
+        .keterangan{
+            font-size: 22px;
+            text-align: center;
+            color: #555;
+        } 
+    </style>
+</head>
+<body>
+    <div class="bg-kuning"></div>
+    <div class="container">
+        <h1 class="judul"><center>SGlow Shop</center></h1>
+        <p class="keterangan">
+            Selamat datang di website SGlow Shop.
+            Kami menyediakan Skincare terbagus, terpercaya, dan berkualitas tersedia juga berbagai merk Make Over, Implora, Emina, Dll.
+        </p>
+        <hr />
+        <h2>Jam Kerja</h2>
+        <ul>
+            <li>Senin-Jum'at : 08:00 - 20:00</li>
+            <li>Sabtu : 08:00 - 18:00</li>
+            <li>Minggu : Libur</li>
+        </ul>
+        <hr />
+        <h2>Produk SGlow Shop</h2>
+        <ul class="produk">
+            <li>
+                <img src="gambar_produk_1.jpg" width="100%" height="200px">
+                <button>Pesan</button>
+            </li>
+            <li>
+                <img src="gambar_produk_2.jpg" width="100%" height="200px">
+                <button>Pesan</button>
+            </li>
+            <li>
+                <img src="gambar_produk_3.jpg" width="100%" height="200px">
+                <button>Pesan</button>
+            </li>
+            <li>
+                <img src="gambar_produk_4.jpg" width="100%" height="200px">
+                <button>Pesan</button>
+            </li>
+            <li>
+                <img src="gambar_produk_5.jpg" width="100%" height="200px">
+                <button>Pesan</button>
+            </li>
+            <li>
+                <img src="gambar_produk_6.jpg" width="100%" height="200px">
+                <button>Pesan</button>
+            </li>
+        </ul>
+        <h3><center>Dan Masih banyak yang lainya.</center></h6>
+        <br>
+        <hr />
+        <h2>Hubungi Kami Untuk Memesan</h2>
+        <ul>
+            <li>
+                Nomor WA : 08123456789
+            </li>
+            <li>
+                Email : sglowshop@gmail.com
+            </li>
+        </ul>
+        <hr />
+        <br>
+        <br>
+    </div>
+    <div class="bg-kuning"></div>
+    <!-- bagian javasript -->
+    <script>
+        document
+        .querySelectorAll('button').forEach(btn => btn.addEventListener('click', function(){
+            alert("Hubungi 08123456789 Untuk Memesan.");
+        }))
+    </script>
+</body>
+</html>
